@@ -209,9 +209,11 @@ export default function Home() {
               type="email"
               className=" bg-gray-600/50 border border-gray-600 placeholder:text-gray-300 pl-3 rounded-lg pr-8 mb-4 h-12 md:mb-0 md:pr-52"
             />
-            <button className=" bg-red-600 px-5 py-3 rounded-md font-bold flex items-center md:px-8 md:text-lg">
-              Get Started <ChevronRightIcon className="w-6" />
-            </button>
+            <Link href="/login">
+              <button className=" bg-red-600 px-5 py-3 rounded-md font-bold flex items-center md:px-8 md:text-lg">
+                Get Started <ChevronRightIcon className="w-6" />
+              </button>
+            </Link>
           </form>
         </section>
         <section className="break-line"></section>
