@@ -10,6 +10,9 @@
 }
 
 @layer components{
-    .asked-questions { @apply bg-[#141414] flex items-center justify-between px-4 m-4 h-16}
-    
+    .asked-questions { @apply bg-[#2D2D2D] flex items-center justify-between  m-2 px-6 py-4 text-left cursor-pointer md:text-2xl md:py-6 xl:text-3xl}
+
+    .break-line {
+        @apply h-2 bg-[#232323]
+    }
 }
