@@ -5,6 +5,7 @@ import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { GlobeAltIcon } from "@heroicons/react/24/solid";
 import { FcDownload } from "react-icons/Fc";
 import { PlusSmallIcon } from "@heroicons/react/24/solid";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -214,6 +215,7 @@ export default function Home() {
           </form>
         </section>
         <section className="break-line"></section>
+        <Footer />
       </main>
     </>
   );

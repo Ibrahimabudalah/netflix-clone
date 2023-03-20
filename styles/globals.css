@@ -15,4 +15,5 @@
     .break-line {
         @apply h-2 bg-[#232323]
     }
+    .footer-class{ @apply text-[#ffffffb3] underline py-1}
 }
