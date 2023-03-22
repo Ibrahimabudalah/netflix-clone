@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Navbar from "@/components/navbar";
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <main className="bg-darkGray">
+      <Navbar />
+    </main>
+  );
 }
 
-export default Home
+export default Home;
