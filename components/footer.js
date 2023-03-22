@@ -8,7 +8,7 @@ function Footer() {
         Questions? Call{" "}
         <span className="underline cursor-pointer">1-844-542-4813</span>
       </h3>
-      <section className="footer-class text-sm md:flex md:flex-row md:items-start md:justify-center md:space-x-2">
+      <section className="footer-class text-sm md:flex md:flex-row md:items-start md:justify-center md:space-x-2 xl:space-x-16">
         <div>
           <p className="py-1">FAQ</p>
           <p className="py-1">Gift Card Terms</p>
@@ -45,9 +45,9 @@ function Footer() {
       </section>
       <section className="space-y-3 py-10 no-underline text-white">
         <section className="flex justify-around border items-center no-underline border-white w-32 h-8 rounded-md xl:w-32">
-          <GlobeAltIcon className="w-5 xl:w-10" />
+          <GlobeAltIcon className="w-5" />
           English
-          <ChevronDownIcon className="w-5 xl:w-10" />
+          <ChevronDownIcon className="w-5" />
         </section>
         <p>Netflix</p>
       </section>

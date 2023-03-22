@@ -32,7 +32,7 @@ export default function Home() {
             </div>
           </Link>
         </header>
-        <div className="bg-[url('https://rb.gy/dbxdov')] bg-cover">
+        <div className="bg-[url('https://rb.gy/dbxdov')] bg-cover h-screen">
           <nav className="flex justify-between pt-12 px-5 xl:justify-around xl:px-0">
             <Link href="/">
               <img
