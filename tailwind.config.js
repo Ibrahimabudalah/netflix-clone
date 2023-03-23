@@ -11,9 +11,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "darkGray": "#141414",
+        darkGray: "#141414",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
