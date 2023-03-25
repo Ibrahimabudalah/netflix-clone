@@ -1,5 +1,6 @@
 import React from "react";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
 
 export async function getServerSideProps() {
   const BASE_URL = "http:localhost:3000/api";
@@ -50,6 +51,7 @@ export default function Home({
   return (
     <main>
       <Navbar />
+      <Hero netflixOriginals={netflixOriginals} />
     </main>
   );
 }
