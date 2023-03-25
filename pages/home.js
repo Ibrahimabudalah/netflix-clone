@@ -49,9 +49,11 @@ export default function Home({
   documentaries,
 }) {
   return (
-    <main>
+    <main className="relative">
       <Navbar />
-      <Hero netflixOriginals={netflixOriginals} />
+      <section className=" pl-4 pb-24 lg:space-y-24 lg:pl-16">
+        <Hero netflixOriginals={netflixOriginals} />
+      </section>
     </main>
   );
 }

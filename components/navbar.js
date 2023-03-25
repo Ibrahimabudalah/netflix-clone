@@ -24,8 +24,8 @@ function Navbar() {
     <nav
       className={`${
         isScroll
-          ? "flex bg-transparent text-white justify-between p-5"
-          : "flex bg-darkGray text-white justify-between p-5"
+          ? "flex bg-darkGray text-white justify-between p-5 top-0 sticky"
+          : "flex bg-transparent text-white justify-between p-5 top-0"
       }`}
     >
       <section className="flex space-x-6">
