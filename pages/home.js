@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Row from "@/components/Row";
 
 export async function getServerSideProps() {
   const BASE_URL = "http:localhost:3000/api";
@@ -53,6 +54,15 @@ export default function Home({
       <Navbar />
       <section className=" pl-4 pb-24 lg:space-y-24 lg:pl-16">
         <Hero netflixOriginals={netflixOriginals} />
+      </section>
+      <section className=" pl-4 pb-24 lg:space-y-24 lg:pl-16">
+        <Row title="Trending Now" movies={trendingNow} />
+        <Row title="Top Rated" movies={topRated} />
+        <Row title="Action Thrillers" movies={actionMovies} />
+        <Row title="Comedies" movies={comedyMovies} />
+        <Row title="Scary Movies" movies={horrorMovies} />
+        <Row title="Romance Movies" movies={romanceMovies} />
+        <Row title="Documentaries" movies={documentaries} />
       </section>
     </main>
   );
