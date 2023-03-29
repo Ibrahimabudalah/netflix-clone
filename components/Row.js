@@ -5,18 +5,6 @@ import { useRef, useState } from "react";
 
 function Row({ title, movies }) {
   const referance = useRef(0);
-  //   const [isMoved, setIsMoved] = useState(false);
-
-  //   const handleClick = () => {
-  //     setIsMoved(true);
-  //     if (referance.current) {
-  //       const { scrollLeft, clientWidth } = referance.current;
-
-  //       const scrollTo =
-  //         String === "left" ? scrollLeft - clientWidth : scrollLeft + clientWidth;
-  //       referance.current.scrollTo({ left: scrollTo, behavior: "smooth" });
-  //     }
-  //   };
 
   const scrollLeft = () => {
     const left = referance.current;
@@ -39,7 +27,7 @@ function Row({ title, movies }) {
       </h2>
       <section className="group relative md:-ml-2">
         <ChevronLeftIcon
-          className="absolute top-0 bottom-0 right-2 z-40 opacity-0 m-auto h-9 w-9 cursor-pointer transition hover:scale-125 group-hover:opacity-100"
+          className="absolute top-0 bottom-0 left-2 z-50 opacity-0 m-auto h-9 w-9 cursor-pointer transition hover:scale-125 group-hover:opacity-100"
           onClick={scrollLeft}
         />
         <div
@@ -50,8 +38,9 @@ function Row({ title, movies }) {
             <Thumbnail key={movie.id} movie={movie} />
           ))}
         </div>
+
         <ChevronRightIcon
-          className="absolute top-0 bottom-0 left-2 z-40 m-auto h-9 w-9 opacity-0 cursor-pointer  transition hover:scale-125 group-hover:opacity-100"
+          className="absolute top-0 bottom-0 right-2 z-40 m-auto h-9 w-9 opacity-0 cursor-pointer  transition hover:scale-125 group-hover:opacity-100"
           onClick={scrollRight}
         />
       </section>
