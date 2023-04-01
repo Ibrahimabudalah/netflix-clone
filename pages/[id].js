@@ -9,9 +9,7 @@ function Movie() {
 
   const BASE_URL = "https://api.themoviedb.org/3";
   useEffect(() => {
-    if (!query) {
-      console.log(data); // if NOT
-    } else {
+    if (router.isReady) {
       fetch(
         `${BASE_URL}/movie/${query.id}/videos?api_key=${process.env.NEXT_PUBLIC_API_KEY}&language=en-US`
       )
@@ -19,11 +17,9 @@ function Movie() {
         .then((data) => {
           setData(data.results);
         });
-    }
+    } 
     //the above fetch is used to fetch all trailers corresponding with the movie ID using the id obtained from the router query
   }, [router.isReady]);
-  // console.log(data)
-  // console.log(query)
   return (
     <div>
       <Navbar />
